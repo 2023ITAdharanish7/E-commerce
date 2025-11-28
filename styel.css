@@ -1,0 +1,231 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.navbar-link{
+    display: flex;
+    gap: 12px;
+}
+.navbar-link a{
+    text-decoration: none;
+    color: #1d232c;
+}
+.navbar-link a:hover{
+    text-decoration: underline;
+}
+.navbar-menu-toggle {
+    display: none;
+}
+
+.side-navbar{
+    background-color: #1d232c;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: white;
+    left: -60%;
+    transition: 2s;
+    
+}
+.side-navbar-link{
+    margin: 30px;
+}
+.side-navbar-link a{
+ color: white;
+ text-decoration: none;
+}
+.side-navbar-link a:hover{
+ text-decoration:underline;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    gap:50px;
+    padding: 50px;
+}
+.header button{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    background-color: #1d232c;
+    color: white;
+    cursor: pointer;
+
+
+}
+.service{
+    padding: 20px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-container-2{
+display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.service-container-2 div{
+background-color: #f2f4f7;
+border-radius: 5px;
+padding: 20px;
+margin: 6px;
+}
+.new-arrival{
+    display: flex; flex-wrap: wrap ;justify-content: space-between; margin-top: 20px;
+}
+.new-arrival-container{
+   
+    flex-basis: 20%;
+    position: relative;
+}
+.new-arrival-container button{
+    padding-left: 10px;
+    padding-right: 10px;
+padding-top: 5px;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 40%;
+    left:28%;
+    border-radius: 10px;
+    align-items: center;
+}
+.ourletter{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.bottumcontent input{
+ width: 60%;
+ border: black solid 1px;
+ margin: 15px;
+ padding: 7px;
+ border-radius: 10px;
+}
+.bottumcontent button{
+color: white;
+background-color: black;
+padding-right: 10px;
+padding-left: 10px;
+padding-top: 5px;
+padding-bottom: 5px;
+border-radius: 10px;
+}
+.footer{
+    padding: 40px;
+    color: white;
+    background-color: #1d232c;
+    width: 100%;
+    
+}
+.Allcollectionimage{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    justify-content: space-around;
+    gap: 80px;
+    padding: 40px;
+}
+.Allcollectionimage p{
+text-align: center;
+flex-basis: 20px;
+
+}
+.search{
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.search form{
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+    border: black solid 1px;
+   padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    margin: auto;
+}
+.search form input{
+    border: none;
+    background-color:transparent ;
+    width: 100%;
+}
+.search form input:focus{
+    outline: none;
+}
+.maind{
+margin-top: 10px;
+margin-left: 135px;
+margin-right: 84px;
+width: 70%;
+background-color: #1d232c;
+padding: 70px;
+height: 70%;
+
+border-radius: 10px;
+
+
+}
+
+.maind .cou{
+    color: white;
+}
+.maind .cou input{
+    width: 93%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.maind .cou textarea{
+    width: 93%;
+    padding: 20px;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.maind .cou button{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    margin-top: 10px;
+}
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle {
+    display: block;
+}
+.navbar-link a{
+       display: none;
+}
+.main-image{
+    display: none;
+}
+.service .service-container-1{
+    display: none;
+}
+.service .service-container-2{
+flex-direction: column;   
+}
+}
