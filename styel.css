@@ -5,10 +5,11 @@
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 100%;
 }
 .navbar-link{
     display: flex;
@@ -131,7 +132,7 @@ border-radius: 10px;
     padding: 40px;
     color: white;
     background-color: #1d232c;
-    width: 100%;
+    width: 100vw;
     
 }
 .Allcollectionimage{
@@ -212,6 +213,20 @@ border-radius: 10px;
     border: none;
     margin-top: 10px;
 }
+.mainarea{
+    display: flex;
+    flex-wrap: wrap
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:700px) {
     .navbar-menu-toggle {
     display: block;
@@ -228,4 +243,19 @@ border-radius: 10px;
 .service .service-container-2{
 flex-direction: column;   
 }
+}
+@media (max-width:480px){
+    .maind{
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .new-arrival .new-arrival-container{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
